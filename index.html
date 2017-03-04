@@ -1,28 +1,30 @@
 <!DOCTYPE HTML>
 <html lang="ja">
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <!-- material design lite -->
         <link rel="stylesheet" href="css/material.min.css">
         <script src="js/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link href="css/font-awesome.min.css" rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css">
         <script src="js/scripts.js"></script>
-
         <meta charset="utf-8">
         <title>Live Information Pratform in Hamamatsu</title>
     </head>
 <body>
-    <header>
-        <p href="home.html">logo</p>
+    <header id="target">
+        <a href="home.html"><img src="img/lip.png" width="50" height="50" alt="ロゴ" /></a>
         <section onclick="modal()">
-        <p>search</p>
-            <dialog class="mdl-dialog" id="modal">
+        <i class="fa fa-search-plus fa-3x" aria-hidden="true"></i>
+
+            <!--<dialog class="mdl-dialog" id="modal">
                 <div class="mdl-dialog__content">
-                    <p> test </p>
-                    <!--<div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                    <p>test</p>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
                         <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
                         <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
                     </div>
@@ -33,36 +35,279 @@
                     <div className="mdl-dialog__actions">
                         <button className="mdl-button mdl-js-button close">キャンセル</button>
                         <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
-                    </div>-->
+                    </div>
+                </div>
+            </dialog>-->
+        </section>
+    </header>
+    <div class="main">
+        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
                 </div>
             </dialog>
         </section>
-    </header>
-    <section class=article onclick="modal()">
-        <p class="mdl-dialog__title">date</p>
-        <p class="mdl-dialog__title">event name</p>
-        <p class="mdl-dialog__title">artist name</p>
-        <dialog class="mdl-dialog" id="modal">
-            <div class="mdl-dialog__content">
-                <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
-                    <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
-                    <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
                 </div>
-                <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
-                    <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
-                    <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+            </dialog>
+        </section>        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
                 </div>
-                <div className="mdl-dialog__actions">
-                    <button className="mdl-button mdl-js-button close">キャンセル</button>
-                    <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+            </dialog>
+        </section>        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
                 </div>
-            </div>
-      </dialog>
-    </section>
+            </dialog>
+        </section>        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
+                </div>
+            </dialog>
+        </section>        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
+                </div>
+            </dialog>
+        </section>        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
+                </div>
+            </dialog>
+        </section>        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
+                </div>
+            </dialog>
+        </section>        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
+                </div>
+            </dialog>
+        </section>        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
+                </div>
+            </dialog>
+        </section>        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
+                </div>
+            </dialog>
+        </section>        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
+                </div>
+            </dialog>
+        </section>        <section class=article onclick="modal()">
+            <p class="mdl-dialog__title">date</p>
+            <p>event name</p>
+            <p>artist name</p>
+            <dialog class="mdl-dialog" id="modal">
+                <div class="mdl-dialog__content">
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="text" id="account" name="account" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="account">アカウント</label>
+                    </div>
+                    <div className="mdl-textfield mdl-js-textfield mdl-textfield-floating-label is-upgraded">
+                        <input className="mdl-textfield__input mdl-model" type="password" id="password" name="password" autofocus />
+                        <label className="mdl-textfield__label" htmlFor="password">パスワード</label>
+                    </div>
+                    <div className="mdl-dialog__actions">
+                        <button className="mdl-button mdl-js-button close">キャンセル</button>
+                        <button className="mdl-button mdl-js-button mdl-button--colored">ログイン</button>
+                    </div>
+                </div>
+            </dialog>
+        </section>
+    </div>
     <footer>
-        <p>left navigation</p>
+        <i class="fa fa-chevron-left fa-3x" aria-hidden="true"></i>
         <p>month</p>
-        <p>right navigation</p>
+        <i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i>
     </footer>
 </body>
 </html>
