@@ -13,3 +13,19 @@ $(document).ready(function(){
     startPos = currentPos;
     });
 });
+
+
+$(function() {
+  $('.article').click(function() {
+    document.getElementById('article_modal').showModal();
+  });
+});
+$(function() {
+  $('#search_botton').click(function() {
+    console.log(document.forms.searchform.search_text.value);
+  });
+});
+$('.close_modal').on('click', function () {
+    console.log("close modal");
+  $('#search_modal').fadeOut();
+});
