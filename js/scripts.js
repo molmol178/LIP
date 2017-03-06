@@ -16,16 +16,15 @@ $(document).ready(function(){
 
 
 $(function() {
-  $('.article').click(function() {
+  $('.wrap_article').click(function() {
+    console.log("open modal");
     document.getElementById('article_modal').showModal();
   });
 });
-$(function() {
-  $('#search_botton').click(function() {
-    console.log(document.forms.searchform.search_text.value);
-  });
-});
-$('.close_modal').on('click', function () {
+
+$(function(){
+  $('.close_modal').click(function () {
     console.log("close modal");
-  $('#search_modal').fadeOut();
+    document.getElementById('article_modal').close();
+  });
 });
