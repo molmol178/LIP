@@ -11,20 +11,17 @@ $(document).ready(function(){
         $("#target").css("top", 0 + "px");
     }
     startPos = currentPos;
-    });
-});
-
-
-$(function() {
-  $('.wrap_article').click(function() {
-    console.log("open modal");
-    document.getElementById('article_modal').showModal();
   });
+  
 });
 
-$(function(){
-  $('.close_modal').click(function () {
-    console.log("close modal");
-    document.getElementById('article_modal').close();
-  });
-});
+window.onload = ajax_search; 
+
+function ajax_search(){ 
+  $(".main").show(); 
+  $.post("./find.php", function(data){
+   if (data.length>0){ 
+     $(".main").html(data); 
+   } 
+  }) 
+} 

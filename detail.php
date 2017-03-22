@@ -33,25 +33,43 @@
             <a href="index.php"><img src="img/lip.png" width="50" height="50" alt="ロゴ" /></a>
         </div>
     </header>
-    <div class="main" style="text-align:center">
-        <center><img src = "img/logo_minhama.png" width = "60%" ></center>
-        <p>Live Information Platform HAMAMATSUは<br>
-        浜松市の音楽文化の発展を願い<br>
-        多くの人がライブへ足を運ぶよう<br>
-        ライブへ行くための情報を発信する<br>
-        プラットフォームです。</p>
 
-        <p>浜松市の補助金<br>
-        「みんなのはままつ創造プロジェクト」<br>
-        の補助を受けて<br>
-        L.I.P.実行委員会が運営しています。<br>
-        <a href="mailto:l-i-p@sakura.ne.jp">Contact us.</a><br>
-        <br>
-        Twitterハッシュタグ<a href="https://twitter.com/search?f=tweets&vertical=default&q=%23lip%E6%B5%9C%E6%9D%BE&src=typd">#lip浜松</a>で検索！
-        </p>
-        ※当サイトに掲載された文章や画像などの著作物を無断で引用・転載することを禁止します。
-        </p>
+<div class="main">
+    <div class="detail_date">
+        <?php $date = $_GET['date'];
+        echo $date; ?>
     </div>
+    <div class="detail_event_name">
+        <?php $event_name = $_GET['event_name'];
+        echo $event_name; ?>
+    </div>
+    <div class="detail_child">
+        <p class="detail_subtitle">時間</p>
+        <?php $time = $_GET['time'];
+        echo $time; ?>
+    </div>
+    <div class="detail_child">
+        <p class="detail_subtitle">アーティスト</p>
+        <?php $artist_name = $_GET['artist_name'];
+        echo $artist_name; ?>
+    </div>
+    <div class="detail_child">
+        <p class="detail_subtitle">会場</p>
+        <?php $venue_name = $_GET['venue_name'];
+        echo $venue_name; ?>
+    </div>
+    <div class="detail_child">
+        <p class="detail_subtitle">会場住所</p>
+        <?php $venue_add = $_GET['venue_add'];
+        echo $venue_add; ?>
+    </div>
+    <div class="detail_child">
+        <p class="detail_subtitle">URL</p>
+        <?php $event_url = $_GET['event_url'];
+        echo '<a href="'.$event_url.'">'.$event_url.'</a>'; ?>
+    </div>
+
+</div>
 
     <footer class="footer">
         <center><a href="home.html">&copy;2017 L.I.P. Executive Committee</a></center>

@@ -23,34 +23,29 @@
         <link href="css/font-awesome.min.css" rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css">
-        <!--<script src="js/scripts.js"></script>-->
+        <script src="js/scripts.js"></script>
+        <script src="js/search.js"></script>
         <meta charset="utf-8">
         <title>Live Information Platform in Hamamatsu</title>
     </head>
-<body>
+<body  style="background-color: #E0E0E0;">
     <header id="target">
         <div class="logo">
             <a href="index.php"><img src="img/lip.png" width="50" height="50" alt="ロゴ" /></a>
         </div>
+        <div class="inner_form">
+            <form id="searchform" action="search.php" method="POST">
+                <input type="search" value="" name="search_value"id="search_text" onkeydown="search();">
+                <input type="submit" id="submit">
+            </form>
+            <a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+        </div>
     </header>
-    <div class="main" style="text-align:center">
-        <center><img src = "img/logo_minhama.png" width = "60%" ></center>
-        <p>Live Information Platform HAMAMATSUは<br>
-        浜松市の音楽文化の発展を願い<br>
-        多くの人がライブへ足を運ぶよう<br>
-        ライブへ行くための情報を発信する<br>
-        プラットフォームです。</p>
+    <div class="main main-bg">
 
-        <p>浜松市の補助金<br>
-        「みんなのはままつ創造プロジェクト」<br>
-        の補助を受けて<br>
-        L.I.P.実行委員会が運営しています。<br>
-        <a href="mailto:l-i-p@sakura.ne.jp">Contact us.</a><br>
-        <br>
-        Twitterハッシュタグ<a href="https://twitter.com/search?f=tweets&vertical=default&q=%23lip%E6%B5%9C%E6%9D%BE&src=typd">#lip浜松</a>で検索！
-        </p>
-        ※当サイトに掲載された文章や画像などの著作物を無断で引用・転載することを禁止します。
-        </p>
+   
+     
+
     </div>
 
     <footer class="footer">
